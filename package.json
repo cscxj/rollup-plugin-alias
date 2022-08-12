@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-alias",
+  "name": "@cxj-npm/rollup-plugin-alias",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -7,8 +7,12 @@
   "scripts": {
     "build": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "rollup",
+    "vite",
+    "alias"
+  ],
+  "author": "cxj",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.4",
