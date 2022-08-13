@@ -2,9 +2,9 @@ import { PluginHooks } from "rollup";
 
 export type ResolverFunction = PluginHooks["resolveId"];
 
-export type AliasReplaceFunction = (
+export type ReplacementFunction = (
   find: string | RegExp,
-  importee: string
+  importer: string
 ) => string;
 
 export interface ResolverObject {
@@ -14,13 +14,13 @@ export interface ResolverObject {
 
 export interface Alias {
   find: string | RegExp;
-  replacement: string | AliasReplaceFunction;
+  replacement: string | ReplacementFunction;
   customResolver?: ResolverFunction | ResolverObject | null;
 }
 
 export interface ResolvedAlias {
   find: string | RegExp;
-  replacement: string | AliasReplaceFunction;
+  replacement: string | ReplacementFunction;
   resolverFunction: ResolverFunction | null;
 }
 

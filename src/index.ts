@@ -107,7 +107,7 @@ export default function alias(options: RollupAliasOptions = {}): Plugin {
       const replacement =
         typeof matchedEntry.replacement === "string"
           ? matchedEntry.replacement
-          : matchedEntry.replacement(matchedEntry.find, importee);
+          : matchedEntry.replacement(matchedEntry.find, importer);
 
       const updatedId = importee.replace(matchedEntry.find, replacement);
 
