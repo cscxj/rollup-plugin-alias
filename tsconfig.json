@@ -12,7 +12,11 @@
     "pretty": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2017"
+    "target": "ES2017",
+    "baseUrl": ".",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationDir": "."
   },
   "include": ["src/**/*"],
   "exclude": ["dist", "node_modules"]
