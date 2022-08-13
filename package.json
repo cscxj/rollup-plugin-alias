@@ -1,6 +1,6 @@
 {
   "name": "@cxj-npm/rollup-plugin-alias",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Define and resolve aliases for bundle dependencies",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
